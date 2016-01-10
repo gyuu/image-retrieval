@@ -49,7 +49,7 @@ for i, image_path in enumerate(image_paths):
     # kpts, des = des_ext.compute(im, kpts)
     gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
     (kpts, des) = sift.detectAndCompute(gray, None)
-    print "# kps: {}, descriptors: {}".format(len(kps), descs.shape)
+    print "# kps: {}, descriptors: {}".format(len(kpts), des.shape)
 
     # rootsift
     #rs = RootSIFT()
